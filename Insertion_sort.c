@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define N 10
+#define N 5
 void Insertion_sort(int a[],int );
 int main()
 {
