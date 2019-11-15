@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define N 20
+#define N 5
 void Bubble_sort(int arr[],int );
 int main()
 {
