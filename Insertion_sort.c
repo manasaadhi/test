@@ -3,7 +3,7 @@
 void Insertion_sort(int a[],int );
 int main()
 {
-	int arr[N],i,j;
+	int arr[N],i,j=0;
 	printf("Enter Array elements:\n");
 	for(i=0;i<N;i++)
 		scanf("%d",&arr[i]);//Reading array elements
