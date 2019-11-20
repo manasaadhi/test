@@ -1,9 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
 //Selection sort decleration
+void merge_sublist(int arr[],int,int);
+void merge_sort(int arr[],int,int,int);
+void quicksort(int arr[],int,int);
 void select_sort(int arr[],int n);
 void Insertion_sort(int arr[],int n);
 void Bubble_sort(int arr[],int n);
+void print(int arr[],int ,int);
+void print_quick(int arr[],int,int);
+
 int main(void)
 {
         int n,i,ch;
@@ -23,7 +29,7 @@ int main(void)
                 printf("%d ",ptr[i]);
         }*/
 	printf("Enter a number for particular operation:\n");
-	printf("1.Selection sort\n2.Insertion Sort\n3.Bubble sort\n");
+	printf("1.Selection sort\n2.Insertion Sort\n3.Bubble sort\n4.Merge sort\n5.Quick sort\n");
 	scanf("%d",&ch);
 	switch(ch)
 	{
@@ -39,8 +45,16 @@ int main(void)
 		Bubble_sort(arr,n);
 		printf("\n");
 		break;
+	case 4:
+		print(arr,0,n-1);
+		printf("\n");
+		break;
+	case 5:
+		 print_quick(arr,0,n-1);
+			printf("\n");
+			break;
 	default:
-		printf("sorry enter a number between 1&3\n");
+		printf("sorry enter a number between 1&5\n");
 		break;
 	}
 }
