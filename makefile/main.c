@@ -30,6 +30,7 @@ int main(void)
         }*/
 	printf("Enter a number for particular operation:\n");
 	printf("1.Selection sort\n2.Insertion Sort\n3.Bubble sort\n4.Merge sort\n5.Quick sort\n");
+
 	scanf("%d",&ch);
 	switch(ch)
 	{
